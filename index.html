@@ -4,12 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Financial Affairs</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6cfebedcd3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header stars here -->
     <header>
-      <h1>Financial Affairs</h1>
+      <h1 class="text-4xl font-bold text-center">
+        Financial Affairs <i class="fa-solid fa-building-columns"></i>
+      </h1>
     </header>
+
+    <!-- Main part -->
+
+    <section class="mt-10 mb-3">
+      <div class="grid grid-cols-2 justify-items-center">
+        <div class="w-3/4">
+          <img src="images/money.jpg" alt="" srcset="" />
+        </div>
+        <div class="w-3/4 bg-slate-300">
+          <div>
+            <!-- Income -->
+
+            <div>
+              <h4 class="font-semibold text-2xl mt-8 text-center my-5">
+                Income
+              </h4>
+            </div>
+            <div class="grid grid-cols-2 justify-items-center">
+              <div>
+                <p><span class="text-xl font-semibold">Income:</span></p>
+              </div>
+              <div class="">
+                <input
+                  itemid="income-input"
+                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  type="text"
+                  placeholder="$"
+                  id=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Expenses -->
+
+          <div>
+            <div>
+              <h4 class="font-semibold text-2xl mt-8 text-center my-5">
+                Expenses
+              </h4>
+            </div>
+            <div class="grid grid-cols-2 justify-items-center">
+              <div>
+                <p><span class="text-xl font-semibold">Food:</span></p>
+              </div>
+              <div>
+                <input
+                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  type="text"
+                  placeholder="$"
+                  id=""
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-2 justify-items-center">
+              <div>
+                <p><span class="text-xl font-semibold">Rent:</span></p>
+              </div>
+              <div>
+                <input
+                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  type="text"
+                  placeholder="$"
+                  id=""
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-2 justify-items-center">
+              <div>
+                <p><span class="text-xl font-semibold">Clothes:</span></p>
+              </div>
+              <div>
+                <input
+                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  type="text"
+                  placeholder="$"
+                  id=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Calculate Button -->
+
+          <div class="text-center">
+            <button
+              id="calculate-btn"
+              class="bg-pink-600 px-8 py-2 text-white rounded font-semibold mt-5"
+            >
+              Calculate
+            </button>
+          </div>
+          <!-- Total expense and balance -->
+          <div class="text-center">
+            <p class="text-2xl font-semibold mt-8">
+              Total Expenses: <span> $$</span>
+            </p>
+            <p class="text-2xl font-semibold mt-5">Balance: <span> $$</span></p>
+          </div>
+
+          <!-- Saving Calculation-->
+          <div class="text-center">
+            <p class="text-xl font-semibold mt-5">
+              Save:
+              <input
+                class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                type="text"
+                placeholder="$"
+                id=""
+              />
+              <span class="mx-2">%</span>
+              <button
+                class="bg-pink-600 px-8 py-0.5 text-white rounded font-medium mt-5"
+              >
+                Save
+              </button>
+            </p>
+          </div>
+
+          <!-- Remaining balance and total saving -->
+
+          <div class="text-center">
+            <p class="text-2xl font-semibold mt-8">
+              Saving Amount: <span> $$</span>
+            </p>
+            <p class="text-2xl font-semibold mt-5">
+              Remaining Balance: <span> $$</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript  -->
+    <script src="js/calculation.js"></script>
   </body>
 </html>
