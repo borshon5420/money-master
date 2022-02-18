@@ -44,11 +44,10 @@
               </div>
               <div class="">
                 <input
-                  itemid="income-input"
                   class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
                   type="text"
                   placeholder="$"
-                  id=""
+                  id="income-input"
                 />
               </div>
             </div>
@@ -63,40 +62,40 @@
             </div>
             <div class="grid grid-cols-2 justify-items-center">
               <div>
-                <p><span class="text-xl font-semibold">Food:</span></p>
+                <p><span class="text-xl font-semibold">Food: </span></p>
               </div>
               <div>
                 <input
                   class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
                   type="text"
                   placeholder="$"
-                  id=""
+                  id="food-costing"
                 />
               </div>
             </div>
             <div class="grid grid-cols-2 justify-items-center">
               <div>
-                <p><span class="text-xl font-semibold">Rent:</span></p>
+                <p><span class="text-xl font-semibold">Rent: </span></p>
               </div>
               <div>
                 <input
                   class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
                   type="text"
                   placeholder="$"
-                  id=""
+                  id="rent-costing"
                 />
               </div>
             </div>
             <div class="grid grid-cols-2 justify-items-center">
               <div>
-                <p><span class="text-xl font-semibold">Clothes:</span></p>
+                <p><span class="text-xl font-semibold">Clothes: </span></p>
               </div>
               <div>
                 <input
                   class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
                   type="text"
                   placeholder="$"
-                  id=""
+                  id="cloth-costing"
                 />
               </div>
             </div>
@@ -114,9 +113,11 @@
           <!-- Total expense and balance -->
           <div class="text-center">
             <p class="text-2xl font-semibold mt-8">
-              Total Expenses: <span> $$</span>
+              Total Expenses: $ <span id="total-expenses">0</span>
             </p>
-            <p class="text-2xl font-semibold mt-5">Balance: <span> $$</span></p>
+            <p class="text-2xl font-semibold mt-5">
+              Balance: $<span id="balance-total"> 0</span>
+            </p>
           </div>
 
           <!-- Saving Calculation-->
@@ -127,10 +128,11 @@
                 class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
                 type="text"
                 placeholder="$"
-                id=""
+                id="save-input"
               />
               <span class="mx-2">%</span>
               <button
+                id="save-btn"
                 class="bg-pink-600 px-8 py-0.5 text-white rounded font-medium mt-5"
               >
                 Save
@@ -142,10 +144,10 @@
 
           <div class="text-center">
             <p class="text-2xl font-semibold mt-8">
-              Saving Amount: <span> $$</span>
+              Saving Amount: <span id="saving-amount"> $$</span>
             </p>
             <p class="text-2xl font-semibold mt-5">
-              Remaining Balance: <span> $$</span>
+              Remaining Balance: <span id="remaining-amount"> $$</span>
             </p>
           </div>
         </div>
