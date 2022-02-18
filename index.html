@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Financial Affairs</title>
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font awesome -->
@@ -18,22 +17,21 @@
   <body>
     <!-- Header stars here -->
     <header>
-      <h1 class="text-4xl font-bold text-center">
-        Financial Affairs <i class="fa-solid fa-building-columns"></i>
-      </h1>
+      <h1 class="text-4xl font-bold text-center">Financial Affairs</h1>
     </header>
 
     <!-- Main part -->
 
     <section class="mt-10 mb-3">
-      <div class="grid grid-cols-2 justify-items-center">
-        <div class="w-3/4">
+      <div
+        class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="w-3/4 mb-3">
           <img src="images/money.jpg" alt="" srcset="" />
         </div>
-        <div class="w-3/4 bg-slate-300">
+        <div class="w-3/4 bg-slate-300 mb-3 rounded">
           <div>
             <!-- Income -->
-
             <div>
               <h4 class="font-semibold text-2xl mt-8 text-center my-5">
                 Income
@@ -45,7 +43,7 @@
               </div>
               <div class="">
                 <input
-                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  class="border border-gray-400 rounded inline-block w-48 mb-3 px-2"
                   type="text"
                   placeholder="$"
                   id="income-input"
@@ -67,7 +65,7 @@
               </div>
               <div>
                 <input
-                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  class="border border-gray-400 rounded inline-block w-48 mb-3 px-2"
                   type="text"
                   placeholder="$"
                   id="food-costing"
@@ -80,7 +78,7 @@
               </div>
               <div>
                 <input
-                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  class="border border-gray-400 rounded inline-block w-48 mb-3 px-2"
                   type="text"
                   placeholder="$"
                   id="rent-costing"
@@ -93,7 +91,7 @@
               </div>
               <div>
                 <input
-                  class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                  class="border border-gray-400 rounded inline-block w-48 mb-3 px-2"
                   type="text"
                   placeholder="$"
                   id="cloth-costing"
@@ -105,7 +103,6 @@
 
           <div class="text-center">
             <button
-              onclick="errorMessage()"
               id="calculate-btn"
               class="bg-pink-600 px-8 py-2 text-white rounded font-semibold mt-5"
             >
@@ -127,7 +124,7 @@
             <p class="text-xl font-semibold mt-5">
               Save:
               <input
-                class="border border-gray-400 rounded inline-block w-56 mb-3 px-2"
+                class="border border-gray-400 rounded inline-block w-48 mb-3 px-2"
                 type="text"
                 placeholder="$"
                 id="save-input"
@@ -148,7 +145,7 @@
 
           <div class="text-center">
             <p class="text-2xl font-semibold mt-8">
-              Saving Amount: <span id="saving-amount"> $$</span>
+              Saving Amount: <span id="saving-amount"> $$</span><br />
               <span id="error"> </span>
             </p>
             <p class="text-2xl font-semibold mt-5">
